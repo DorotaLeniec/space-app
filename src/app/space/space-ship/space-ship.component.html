@@ -1,0 +1,16 @@
+<h1>{{spaceShip.modelName}}</h1>
+<img class="avatar" *ngIf="spaceShip.pilot && spaceShip.pilot.imageUrl" [src]="spaceShip.pilot.imageUrl">
+<img [src]="spaceShip.imageUrl">
+<div class="health" [title]="'Health ' + spaceShip.health + '%'">
+  <div class="health-bar" [style.width.%]="spaceShip.health"></div>
+</div>
+
+<div class="property" [class.active]="spaceShip.activeShields">
+  SHIELDS
+</div>
+<div class="property" [class.active]="spaceShip.activeWeapons">
+  WEAPONS
+</div>
+<div class="actions">
+  <ng-content></ng-content>
+</div>

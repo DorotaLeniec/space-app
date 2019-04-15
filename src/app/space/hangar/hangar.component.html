@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-6">
+    <h1>HANGAR</h1>
+    <ul>
+      <li *ngFor="let ship of spaceShips">
+        <app-space-ship [spaceShip]=ship>
+          <button *ngIf="selectedPilot && !ship.pilot" (click)="assignPilot(ship)">Pilotuj</button>
+          <button *ngIf="ship.pilot" (click)="deassignPilot(ship)">Opuść</button>
+        </app-space-ship>
+      </li>
+    </ul>
+  </div>
+  <div class="col-6">
+    <app-pilot-room (selected)="selectedPilot = $event"></app-pilot-room>
+  </div>
+</div>
+
+
