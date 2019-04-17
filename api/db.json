@@ -2,8 +2,8 @@
   "pilots": [
     {
       "id": 1,
-      "firstName": "Lee",
-      "lastName": "Adama",
+      "firstName": "Zbunioo",
+      "lastName": "Maruda123",
       "imageUrl": "/assets/fox2.png"
     },
     {
@@ -29,6 +29,23 @@
       "firstName": "Wazel Bazel",
       "lastName": "Ahathon",
       "imageUrl": "/assets/crazydog.jpg"
+    },
+    {
+      "id": 6,
+      "firstName": "Dosia",
+      "lastName": "Samosia",
+      "imageUrl": "/assets/blueship.png"
+    }
+  ],
+  "forbidden-names": [
+    {
+      "name": "Maruda"
+    },
+    {
+      "name": "Ciamajda"
+    },
+    {
+      "name": "Gapcio"
     }
   ]
 }

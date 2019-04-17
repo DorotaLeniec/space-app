@@ -1,5 +1,5 @@
 export class Pilot {
-  static defaultImageUrl = '/assets/blueship.png';
+  static defaultImageUrl = '/assets/unknown.jpg';
   firstName: string;
   lastName: string;
   imageUrl: string;
