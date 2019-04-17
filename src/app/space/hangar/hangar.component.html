@@ -2,7 +2,7 @@
   <div class="col-6">
     <h1>HANGAR</h1>
     <ul>
-      <li *ngFor="let ship of spaceShips">
+      <li *ngFor="let ship of spaceShips | async">
         <app-space-ship [spaceShip]=ship>
           <button *ngIf="selectedPilot && !ship.pilot" (click)="assignPilot(ship)">Pilotuj</button>
           <button *ngIf="ship.pilot" (click)="deassignPilot(ship)">Opuść</button>
@@ -14,5 +14,18 @@
     <app-pilot-room (selected)="selectedPilot = $event"></app-pilot-room>
   </div>
 </div>
+<div class="row">
+  <div class="col-6">
+      <a routerLink="production" routerLinkActive="active">
+          Production
+       </a>
+       &nbsp;
+       <a routerLink="destruction" routerLinkActive="active">
+          Destruction
+       </a>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
 
 

@@ -1,4 +1,16 @@
+:host {
+  min-height: 1000px;
+}
+
 ul li {
   display: inline-block
 }
 
+a {
+  font-weight: bold;
+  color: white;
+}
+
+a.active {
+  color: orange;
+}
